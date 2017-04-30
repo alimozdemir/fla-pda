@@ -14,18 +14,18 @@ Compile and run : gcc pda.c && ./a.out
 
 Required files : grammer.txt and words.txt
 
-Since it is C, I wrote everything of implementation, such as stacks etc. Thus, the code could seems long but the main part is just the process() function.
+Since it is C, I wrote everything of implementation, such as stacks etc. Thus, the code could seem long but the main part is just the process() function.
 And of course it is not my best, because of the deadline and other projects.
 
 Thanks to Merve for homework pdf file.
 
 ### Simple information about implementation
-The approach I implemented is similar to maze decision stack approach. It takes all possibilities until find a solution. 
+The approach I implemented is similar to maze decision stack approach. It takes all possibilities to find a solution. 
 
 As initially, I push the 'S' to stack. Every time I call the process function, the algorithm pop the first non-terminal from stack and push the all possible rules from that non-terminal. After that I copy the current state, steps and output of the process and call again the process.
 
 
-Current State is a char stack that contains non-terminals mostly.
+Current State is a char stack that contains mostly non-terminals.
 
 Steps, just the steps found at that moment.
 
